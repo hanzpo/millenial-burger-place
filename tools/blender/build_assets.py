@@ -159,7 +159,7 @@ def M():
         "wood": mat("wood", "#7a5232", 0.8),
         "wood2": mat("wood_light", "#8f6640", 0.8),
         "wood3": mat("wood_dark", "#54361f", 0.85),
-        "steel": mat("steel", "#9aa0a6", 0.35, 0.9),
+        "steel": mat("steel", "#8d9297", 0.55, 0.7),
         "darksteel": mat("dark_steel", "#3b3d40", 0.5, 0.8),
         "gunmetal": mat("gunmetal", "#4a4d52", 0.45, 0.75),
         "black": mat("matte_black", "#1a1a1a", 0.8),
@@ -426,7 +426,7 @@ def build_kitchen():
     root = empty("kitchen")
     # Flat-top grill.
     box("grill_body", T(1.75, 0.6, 0.43), (2.7, 0.85, 0.86), m["darksteel"], root, 0.01)
-    box("grill_top", T(1.75, 0.6, 0.88), (2.7, 0.85, 0.04), mat("griddle", "#2a2b2d", 0.3, 0.9), root)
+    box("grill_top", T(1.75, 0.6, 0.88), (2.7, 0.85, 0.04), mat("griddle", "#2a2b2d", 0.5, 0.7), root)
     box("grill_lip", T(1.75, 0.2, 0.95), (2.7, 0.04, 0.12), m["steel"], root)
     for i in range(5):
         cyl("patty", T(0.75 + i * 0.5, 0.65, 0.91), 0.1, 0.02, m["patty"], root, 10, smooth=False)
