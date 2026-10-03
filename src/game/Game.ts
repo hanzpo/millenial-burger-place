@@ -83,7 +83,7 @@ export class Game {
 
     this.composer = new EffectComposer(this.renderer);
     this.composer.addPass(new RenderPass(this.scene, this.camera));
-    this.bloom = new UnrealBloomPass(new THREE.Vector2(256, 256), 0.55, 0.45, 0.9);
+    this.bloom = new UnrealBloomPass(new THREE.Vector2(256, 256), 0.55, 0.45, 1.0);
     this.composer.addPass(this.bloom);
     this.composer.addPass(new OutputPass());
 
@@ -107,7 +107,7 @@ export class Game {
     this.walls = buildRoom(this.scene);
     this.addStatic('kitchen', 0, 0);
     this.addStatic('counter', 0, 0);
-    const hoodLight = new THREE.PointLight(0xfff2dd, 4, 5, 1.5);
+    const hoodLight = new THREE.PointLight(0xfff2dd, 1.5, 4, 1.5);
     hoodLight.position.set(1.8, 2, 0.8);
     this.scene.add(hoodLight);
 

@@ -39,6 +39,9 @@ export class Hud {
         this.renderTop();
       }),
     );
+    document.querySelectorAll<HTMLButtonElement>('[data-rotate]').forEach((b) =>
+      b.addEventListener('click', () => scene.rotate(Number(b.dataset.rotate) as 1 | -1)),
+    );
     $('#panel').addEventListener('click', (e) => this.onPanelClick(e));
     $('#reset').addEventListener('click', async () => {
       if (!confirm('Wipe your save and start over? The beards will be shaved.')) return;

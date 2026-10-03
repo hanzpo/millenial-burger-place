@@ -529,3 +529,9 @@ button.primary {
     bottom: calc(42vh + 24px);
   }
 }
+
+.speed [data-rotate] {
+  font-size: 15px;
+  letter-spacing: 0;
+  padding: 3px 8px;
+}
