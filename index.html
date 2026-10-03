@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Millennial Burger Place</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="game"></div>
+
+    <header id="topbar">
+      <div class="brand">
+        <span class="marquee">EAT</span>
+        <input id="name" maxlength="40" aria-label="Restaurant name" />
+      </div>
+      <div class="stats">
+        <div><span class="label">Day</span><b id="day"></b><span id="clock" class="sub"></span></div>
+        <div><span class="label">Cash</span><b id="money"></b></div>
+        <div><span class="label">Rating</span><b id="rep"></b></div>
+        <div><span class="label">Vibe</span><b id="vibe"></b><span class="sub">+<span id="price-tol"></span> price tolerance</span></div>
+      </div>
+      <div class="speed">
+        <button data-speed="0" title="Pause">❚❚</button>
+        <button data-speed="1" title="Normal">▶</button>
+        <button data-speed="2" title="Fast">▶▶</button>
+        <button data-speed="4" title="Faster">▶▶▶</button>
+      </div>
+    </header>
+
+    <aside id="sidebar">
+      <nav>
+        <button data-tab="build">Build</button>
+        <button data-tab="menu">Menu</button>
+        <button data-tab="staff">Staff</button>
+        <button data-tab="reviews">Reviews</button>
+      </nav>
+      <div id="panel"></div>
+      <footer><span class="hint">Autosaves to this browser</span><button id="reset">Reset save</button></footer>
+    </aside>
+
+    <div id="toasts"></div>
+    <div id="modal" hidden></div>
+    <div id="loading">
+      <p class="marquee">EAT</p>
+      <p>Hanging Edison bulbs…</p>
+      <div class="track"><div id="loading-bar"></div></div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
