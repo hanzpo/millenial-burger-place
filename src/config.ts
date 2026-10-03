@@ -2,12 +2,9 @@
 
 export const GRID_W = 12;
 export const GRID_H = 10;
-export const TILE_W = 64;
-export const TILE_H = 32;
-export const WALL_H = 130;
 
 export const TICK_MS = 100;
-export const MINUTES_PER_TICK = 0.5;
+export const MINUTES_PER_TICK = 0.25;
 export const OPEN_MIN = 11 * 60;
 export const CLOSE_MIN = 23 * 60;
 
@@ -16,7 +13,7 @@ export const CHEF_WAGE = 120;
 export const CHEF_SIGNING = 200;
 export const MAX_CHEFS = 4;
 export const STARTING_MONEY = 2000;
-export const WALK_SPEED = 0.2; // tiles per game minute
+export const WALK_SPEED = 0.4; // tiles per game minute
 
 export type Tile = [number, number];
 
